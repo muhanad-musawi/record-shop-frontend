@@ -1,0 +1,28 @@
+.recordsShow{  
+  margin: 30px ;
+  display: grid; 
+ grid-template-columns: repeat(3 , 1fr); 
+ grid-template-rows: auto;
+}
+.recordsCard{   
+
+border: 2px solid black; 
+border-radius: 10px;
+  margin: 10px 5px; 
+ padding: 10px;  
+
+ 
+} 
+
+.recordsCard li {    
+  padding: 10px 50px; 
+  display: flex;  
+  align-items: center;
+  justify-content:space-between;
+  list-style-type: none
+} 
+
+.recordsCard span {   
+  
+  color: red;
+}

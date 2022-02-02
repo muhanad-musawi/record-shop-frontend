@@ -1,0 +1,11 @@
+.navBarParent{  
+  border-bottom: 2px solid black;
+}
+.navBar{    
+  
+  margin: 20px 10px; 
+  
+  display: flex; 
+  justify-content: space-around; 
+  align-items: center;
+}
