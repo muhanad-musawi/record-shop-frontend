@@ -7,7 +7,7 @@ function Navigation() {
     <div className='navBarParent'>
   <div className='navBar'>  
 
-  <Link className='linkRecords' to='/Home'>Home</Link>  
+  <Link className='linkRecords' to='/'>Home</Link>  
 
     <Link className='linkRecords' to='/records'>Records</Link> 
 

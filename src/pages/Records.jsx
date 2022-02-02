@@ -11,7 +11,7 @@ function Records() {
   },[]); //Dependancy Array
 
   const fetchRecordsData = async()=>{
-    const url = 'http://localhost:4000/records';
+    const url = /*'http://localhost:4000/records'*/ 'https://record-shop-backend-muhanad.herokuapp.com/';
     await fetch(url)
       .then((response)=>response.json())
       .then((data)=>setRecords(data))
