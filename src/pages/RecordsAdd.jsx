@@ -28,7 +28,7 @@ function RecordsAdd() {
 
   const fetchRecordsAddData = (record)=>{ 
     console.log("records:"+record);
-    const url = /*'http://localhost:4000/records'*/ 'https://record-shop-backend-muhanad.herokuapp.com/' ;
+    const url = /*'http://localhost:4000/records'*/ 'https://record-shop-backend-muhanad.herokuapp.com/records' ;
     const recordjson = JSON.stringify(record)
     fetch(url, {
       method: 'POST',
