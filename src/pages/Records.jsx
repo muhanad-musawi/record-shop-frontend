@@ -30,7 +30,7 @@ function Records() {
   
     {records.map((record, index)=>(
       <ul className='recordsCard' key={index}> 
-      <li><img src={record.cover} alt="" /></li>
+      <li><img className='recordCover' src={record.cover} alt="" /></li>
         <li><span>Title:</span> {record.title}</li>
         <li><span>Artist:</span> {record.artist}</li> 
         <li><span>Year:</span> {record.year}</li>

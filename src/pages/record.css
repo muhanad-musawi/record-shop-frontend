@@ -1,11 +1,11 @@
-.recordsShow{  
-  margin: 30px ;
+.recordsShow{   
+ justify-content: center;
   display: grid; 
  grid-template-columns: repeat(3 ,30%); 
  grid-template-rows: auto;
 }
 .recordsCard{   
-
+ 
 border: 2px solid black; 
 border-radius: 10px;
   margin: 10px 5px; 
@@ -13,6 +13,11 @@ border-radius: 10px;
 
  
 } 
+
+.recordCover{   
+  margin: auto auto;
+  width: 95%;
+}
 
 .recordsCard li {    
   padding: 10px 50px; 
