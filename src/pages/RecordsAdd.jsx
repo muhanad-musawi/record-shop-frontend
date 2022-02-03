@@ -23,14 +23,19 @@ function RecordsAdd() {
       ...inputs,
     [name]: value})
     
-  } 
+  }  
+
+  const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+const RECORDS_PATH = BACKEND_URL + '/records'
 
 
   const fetchRecordsAddData = (record)=>{ 
-    console.log("records:"+record);
-    const url = /*'http://localhost:4000/records'*/ 'https://record-shop-backend-muhanad.herokuapp.com/records' ;
+    console.log("records:"+record); 
+    
+    /*'http://localhost:4000/records'*/
+
     const recordjson = JSON.stringify(record)
-    fetch(url, {
+    fetch(RECORDS_PATH  , {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'

@@ -8,11 +8,14 @@ function Records() {
   const [ records, setRecords]  = useState([]) 
   useEffect(()=>{
     fetchRecordsData();
-  },[]); //Dependancy Array
+  },[]); //Dependancy Array 
+  const BACKEND_URL = process.env.REACT_APP_BACKEND_URL;
+const RECORDS_PATH = BACKEND_URL + '/records'
 
   const fetchRecordsData = async()=>{
-    const url = /*'http://localhost:4000/records'*/ 'https://record-shop-backend-muhanad.herokuapp.com/records';
-    await fetch(url)
+    /*'http://localhost:4000/records'*/ 
+    
+    await fetch(RECORDS_PATH )
       .then((response)=>response.json())
       .then((data)=>setRecords(data))
       .catch((err)=>console.log(err))
